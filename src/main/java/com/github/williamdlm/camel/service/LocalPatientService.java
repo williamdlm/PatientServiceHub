@@ -15,7 +15,7 @@ public interface LocalPatientService {
 
 
     @WebMethod
-    void savePatient(LocalPatientDTO localPatientDTO);
+    LocalPatient savePatient(LocalPatientDTO localPatientDTO) throws Exception;
 
     @WebMethod
     List<LocalPatient> findAllPatient();

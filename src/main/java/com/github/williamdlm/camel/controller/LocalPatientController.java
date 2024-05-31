@@ -23,13 +23,13 @@ public class LocalPatientController {
     }
 
     @PostMapping
-    public ResponseEntity savePatient(@RequestBody LocalPatientDTO localPatientDTO) {
-       localPatientServiceImpl.savePatient(localPatientDTO);
+    public ResponseEntity<LocalPatient> savePatient(@RequestBody LocalPatientDTO localPatientDTO) throws Exception {
+      localPatientServiceImpl.savePatient(localPatientDTO);
 
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()
                 .path("/{codeDocumentId}")
-                .buildAndExpand(localPatientDTO.codeDocumentId())
+                .buildAndExpand(localPatientDTO.getCodeDocumentId())
                 .toUri();
 
         return ResponseEntity.created(location).build();

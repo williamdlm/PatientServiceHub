@@ -24,9 +24,9 @@ public class LocalPatient {
     private String lastName;
     @Column(unique = true)
     private String codeDocumentId;
-    private LocalDate birthDate;
+    private String birthDate;
 
-    public LocalPatient(String firstName, String lastName, String codeDocumentId, LocalDate birthDate) {
+    public LocalPatient(String firstName, String lastName, String codeDocumentId, String birthDate) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.codeDocumentId = codeDocumentId;

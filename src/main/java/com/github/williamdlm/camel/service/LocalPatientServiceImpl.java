@@ -7,9 +7,11 @@ import com.github.williamdlm.camel.repository.LocalPatientRepository;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -26,8 +28,10 @@ public class LocalPatientServiceImpl implements LocalPatientService {
 
 
     @WebMethod
-    public void savePatient(LocalPatientDTO localPatientDTO) {
+    public LocalPatient savePatient(LocalPatientDTO localPatientDTO) throws Exception {
         patientRepository.save(localPatientDTO.toModel());
+        LocalPatient newPatient = patientRepository.findByCodeDocumentId(localPatientDTO.getCodeDocumentId()).orElseThrow(()-> new Exception("Patient not found"));
+        return newPatient;
     }
 
     @WebMethod

@@ -1,6 +1,7 @@
 package com.github.williamdlm.camel.config;
 
 import com.github.williamdlm.camel.pojo.HelloSoapImpl;
+import com.github.williamdlm.camel.service.LocalPatientServiceImpl;
 import jakarta.xml.ws.Endpoint;
 import org.apache.cxf.Bus;
 import org.apache.cxf.jaxws.EndpointImpl;
@@ -16,8 +17,8 @@ public class CxfConfig {
     Bus bus;
 
     @Bean
-    public Endpoint endpoint() {
-        EndpointImpl endpoint = new EndpointImpl(bus, new HelloSoapImpl());
+    public Endpoint endpoint(LocalPatientServiceImpl localPatientService) {
+        EndpointImpl endpoint = new EndpointImpl(bus, localPatientService);
         endpoint.publish("/hello"); // http://localhost:8080/services/hello?wsdl
         return endpoint;
     }
