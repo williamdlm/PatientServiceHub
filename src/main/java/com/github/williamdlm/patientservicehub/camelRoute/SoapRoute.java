@@ -7,8 +7,6 @@ import org.springframework.stereotype.Component;
 public class SoapRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
-        from("cxf:/hello?serviceClass=com.github.williamdlm.camel.services.SoapService") //http:localhost:8080/hello?wsdl
-                .log("Received request for ${header.CamelCxfMessage}");
-//                .to("bean:SoapServiceImpl");
+        //TODO: to implements this method
     }
 }

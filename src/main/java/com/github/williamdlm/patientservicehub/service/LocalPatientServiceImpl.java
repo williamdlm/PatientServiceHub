@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-@WebService(endpointInterface = "com.github.williamdlm.camel.service.LocalPatientService")
+@WebService(endpointInterface = "com.github.williamdlm.patientservicehub.service.LocalPatientService")
 public class LocalPatientServiceImpl implements LocalPatientService {
 
     private final LocalPatientRepository patientRepository;
