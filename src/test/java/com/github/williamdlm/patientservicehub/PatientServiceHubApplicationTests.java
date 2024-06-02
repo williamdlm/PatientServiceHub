@@ -1,10 +1,10 @@
-package com.github.williamdlm.camel;
+package com.github.williamdlm.patientservicehub;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CamelApplicationTests {
+class PatientServiceHubApplicationTests {
 
 	@Test
 	void contextLoads() {

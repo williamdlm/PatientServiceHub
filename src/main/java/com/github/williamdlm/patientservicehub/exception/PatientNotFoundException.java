@@ -1,4 +1,4 @@
-package com.github.williamdlm.camel.exception;
+package com.github.williamdlm.patientservicehub.exception;
 
 public class PatientNotFoundException extends Exception {
 

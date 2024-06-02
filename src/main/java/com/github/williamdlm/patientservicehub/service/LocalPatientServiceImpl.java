@@ -1,17 +1,15 @@
-package com.github.williamdlm.camel.service;
+package com.github.williamdlm.patientservicehub.service;
 
-import com.github.williamdlm.camel.dto.LocalPatientDTO;
-import com.github.williamdlm.camel.exception.PatientNotFoundException;
-import com.github.williamdlm.camel.model.LocalPatient;
-import com.github.williamdlm.camel.repository.LocalPatientRepository;
+import com.github.williamdlm.patientservicehub.dto.LocalPatientDTO;
+import com.github.williamdlm.patientservicehub.exception.PatientNotFoundException;
+import com.github.williamdlm.patientservicehub.model.LocalPatient;
+import com.github.williamdlm.patientservicehub.repository.LocalPatientRepository;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

@@ -1,4 +1,4 @@
-package com.github.williamdlm.camel.model;
+package com.github.williamdlm.patientservicehub.model;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlAccessType;
@@ -7,8 +7,6 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.time.LocalDate;
 
 @Entity
 @Data

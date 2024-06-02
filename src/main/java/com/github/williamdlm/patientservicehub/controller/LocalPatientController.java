@@ -1,8 +1,8 @@
-package com.github.williamdlm.camel.controller;
+package com.github.williamdlm.patientservicehub.controller;
 
-import com.github.williamdlm.camel.dto.LocalPatientDTO;
-import com.github.williamdlm.camel.model.LocalPatient;
-import com.github.williamdlm.camel.service.LocalPatientServiceImpl;
+import com.github.williamdlm.patientservicehub.dto.LocalPatientDTO;
+import com.github.williamdlm.patientservicehub.model.LocalPatient;
+import com.github.williamdlm.patientservicehub.service.LocalPatientServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

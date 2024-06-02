@@ -1,4 +1,4 @@
-package com.github.williamdlm.camel.camelRoute;
+package com.github.williamdlm.patientservicehub.camelRoute;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;

@@ -1,7 +1,7 @@
-package com.github.williamdlm.camel.service;
+package com.github.williamdlm.patientservicehub.service;
 
-import com.github.williamdlm.camel.dto.LocalPatientDTO;
-import com.github.williamdlm.camel.model.LocalPatient;
+import com.github.williamdlm.patientservicehub.dto.LocalPatientDTO;
+import com.github.williamdlm.patientservicehub.model.LocalPatient;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
 

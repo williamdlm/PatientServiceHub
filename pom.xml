@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.github.williamdlm</groupId>
-	<artifactId>camel</artifactId>
+	<artifactId>PatientServiceHub</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>camel</name>
-	<description>Demo project for Spring Boot with Camel</description>
+	<description>Service working with soap and rest</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

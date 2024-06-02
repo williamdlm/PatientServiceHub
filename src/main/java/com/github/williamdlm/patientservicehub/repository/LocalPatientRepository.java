@@ -1,6 +1,6 @@
-package com.github.williamdlm.camel.repository;
+package com.github.williamdlm.patientservicehub.repository;
 
-import com.github.williamdlm.camel.model.LocalPatient;
+import com.github.williamdlm.patientservicehub.model.LocalPatient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

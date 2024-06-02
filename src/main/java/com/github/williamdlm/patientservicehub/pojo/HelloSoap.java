@@ -1,4 +1,4 @@
-package com.github.williamdlm.camel.pojo;
+package com.github.williamdlm.patientservicehub.pojo;
 
 
 import jakarta.jws.WebService;

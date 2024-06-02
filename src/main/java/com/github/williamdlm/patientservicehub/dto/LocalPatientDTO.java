@@ -1,12 +1,11 @@
-package com.github.williamdlm.camel.dto;
+package com.github.williamdlm.patientservicehub.dto;
 
-import com.github.williamdlm.camel.model.LocalPatient;
+import com.github.williamdlm.patientservicehub.model.LocalPatient;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.Data;
 
-import java.time.LocalDate;
 @Data
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)

@@ -1,7 +1,6 @@
-package com.github.williamdlm.camel.config;
+package com.github.williamdlm.patientservicehub.config;
 
-import com.github.williamdlm.camel.pojo.HelloSoapImpl;
-import com.github.williamdlm.camel.service.LocalPatientServiceImpl;
+import com.github.williamdlm.patientservicehub.service.LocalPatientServiceImpl;
 import jakarta.xml.ws.Endpoint;
 import org.apache.cxf.Bus;
 import org.apache.cxf.jaxws.EndpointImpl;
